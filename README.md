@@ -1,6 +1,9 @@
 # easy-keygen
 Proof of concept keygen for a fictional, simple algorithm
 
+## Requirements  
+Python 3.6 - (new f string formatting)  
+
 ## About
 By reading the disassembly of a program, we discover that a fictional company uses a very simple alogrithm for its licensing keys.  
 
