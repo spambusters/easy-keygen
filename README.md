@@ -7,11 +7,21 @@ Python 3.6 - (new f string formatting)
 ## About
 By reading the disassembly of a program, we discover that a fictional company uses a very simple alogrithm for its licensing keys.  
 
-It adds each char's ASCII value until a sum of 808 is reached.  
+The alogrithm simply adds each ASCII value within the string until a sum of 808 is reached.  
 In other words, any string whose ASCII values total 808 will be considered a valid key.  
 
-## Usage  
-When prompted, simply enter the number of keys you wish to produce   
+## Example Output  
 
-## Output  
-After discovering the appropriate amount of keys, each will be written to the keys.txt file
+```
+How many keys do you want? 6  
+Found valid key: l0O_Zt75aC  
+Found valid key: hiFaP7I9XO  
+Found valid key: WmnqegnK  
+Found valid key: dfg6Qv_OL  
+Found valid key: yMG9ph-on  
+Found valid key: QiFlGFLLRE  
+
+Found 6 keys!
+```  
+
+After completion, keys are dumped to a local keys.txt file
