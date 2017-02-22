@@ -1,4 +1,5 @@
 import random
+import string
 from sys import stdout
 
 
@@ -21,10 +22,11 @@ def sum(key):
 def keygen():
     """Find valid keys for ASCII target_sum
     
-    By reading the disassembly of a program, we discover that a fictional company uses a
-        very simple alogrithm for its licensing keys.
+    By reading the disassembly of a program, we discover that a fictional
+        company uses a very simple alogrithm for its licensing keys.
     It adds each char's ASCII value until a sum of 808 is reached.
-    In other words, any string whose ASCII values equal 808 will be considered a valid key.
+    In other words, any string whose ASCII values equal 808 will be considered
+        a valid key.
 
     """
     key = ''
@@ -40,7 +42,7 @@ def keygen():
             print('\n[!] - Please enter an integer')
 
     while True:
-        key += random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_')
+        key += random.choice(string.ascii_letters + string.digits)
         ascii_sum = sum(key)
         if ascii_sum > target_sum:
             # Too big, start over!
